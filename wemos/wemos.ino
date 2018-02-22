@@ -2,7 +2,7 @@
 #include <ESP8266WebServer.h>
 #include <WiFiUdp.h>
 #include <functional>
-#include "switch.h"
+#include "Switch.h"
 #include "UpnpBroadcastResponder.h"
 #include "CallbackFunction.h"
 
@@ -16,8 +16,8 @@ bool kitchenLightsOn();
 bool kitchenLightsOff();
 
 // Change this before you flash
-const char* ssid = "June";
-const char* password = "wifipassword";
+const char* ssid = "TN_24GHz_C73195";
+const char* password = "555D078790";
 
 boolean wifiConnected = false;
 
@@ -32,7 +32,7 @@ bool isKitchenLightstsOn = false;
 void setup()
 {
   Serial.begin(9600);
-   
+  Serial.println("Start");
   // Initialise wifi connection
   wifiConnected = connectWifi();
   
@@ -124,3 +124,5 @@ boolean connectWifi(){
   
   return state;
 }
+
+

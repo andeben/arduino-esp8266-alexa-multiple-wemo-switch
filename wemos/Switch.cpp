@@ -244,3 +244,5 @@ void Switch::respondToSearch(IPAddress& senderIP, unsigned int senderPort) {
 
    Serial.println("Response sent !");
 }
+
+
